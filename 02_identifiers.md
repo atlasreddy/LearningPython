@@ -1,4 +1,4 @@
-##Identifiers in Python language
+## Identifiers in Python language
 
 Once after the successful installation of python software, we'll slowly dive into the programming language. 
 
@@ -27,7 +27,7 @@ There are **certain rules** to be followed while defining the identifiers in our
 7. There is a special meaning for identifiers starting with ```_```. 
 <hr>
 
-###Reserved Keywords: 
+### Reserved Keywords: 
 In python, there are some words that are reserved to represent some meaning or functionality which are known as reserved keywords. 
 
 As of _python 3.7.7_ version, there are 35 reserved keywords available. 
@@ -46,7 +46,7 @@ Open python repl tool (python idle) and type below code snippet.
 
 <hr>
 
-###Comments: 
+### Comments: 
 Comments in python are to clarify the code and hence are not interpreted by Python. 
 The comments in python language start with hash character ```#``` . A hash character ```#``` enclosed within the string literal is just the hash character and not a comment. 
 

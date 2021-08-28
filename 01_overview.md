@@ -1,4 +1,4 @@
-##Python Overview
+## Python Overview
 
 **Python** : Python is an easy to learn, powerful high level programming language. It is a general purpose high level programming
 language. Python was developed by the Dutch Programmer Guido van Rossum.  And is managed by Python Software Foundation (PSF).
@@ -44,7 +44,7 @@ As of January 2020, Python 2.x is no longer supported by Python Software Foundat
 And many more. 
 <hr>
 
-####Installation of Python software: 
+#### Installation of Python software: 
 In order to run python programs, we need to install python software on our system. Unlike any other software installation, the python software installation is simple and straight forward.  
 
 How do you verify whether the system is able to execute python code or not ? 
