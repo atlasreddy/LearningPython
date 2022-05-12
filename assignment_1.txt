@@ -1,0 +1,4 @@
+1. Write and execute a program to print your postal address
+2. Write and execute a program to print name of your OS, as many times as the current major version of the OS.
+3. Write and execute a program to print the statement as shown below.
+D:\test\network\python_classes
