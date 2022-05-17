@@ -1,0 +1,13 @@
+1. Write a program to calculate the area of a circle whose radius is 91
+2. Write a program to calculate the amount to be paid after 8 years, where principal = 5000, rate of interest per annum = 9.
+Hint Formula: sum of principal amount and Simple Interest = (principal amount * rate of interest * time) / 100
+3. Why is laptop a valid variable name while @laptop is invalid?
+4. Which of the following are valid variable names.
+    1. eggs    2. variable    3. Eggs    4. AGE
+    5. #photo  6. 7wonders    7. python classes 8. radius.
+    9. _x       10. x_y        11. __a      12. __a__
+    13. _s2_    14. A           15.   s     16. c
+    Note: There is two spaces before s, in 15.
+    two spaces after c, in 16.
+For the valid variables, assign some values to them and print on the console.
+5. Do you think, given 1 and 2 both represent the same variables. 1. dell 2. DELL [Why/Why not]
