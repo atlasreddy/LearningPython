@@ -1,0 +1,27 @@
+
+1. Find out the version of python you're using.
+2. List out all the keywords of your specific version of python.
+3. List out the fundamental data types in Python programming language.
+
+4. Check when the interconversion between the variables possible.
+int -> str
+float -> str
+float -> int
+str -> int
+str -> float
+str -> int
+and vice-versa.
+For what kind of values the conversions are possible.
+Figure out the edge cases like int("q"), int("1)" and so on.
+
+5. string1 = "python classes"
+For the above string, try out all the possible index accessing, string slicing.
+Example: string1[100], string1[5], string1[0:6], string1[-8], string1[-56] etc.
+Make a conclusion about the string slicing, accessing a particular location in the string.
+
+6. Write and execute a program to print the first name, last name, sum of first and last name.
+7. print(first_name, last_name)
+How the output of the above command can be achieved in question 6.
+You are not supposed to use , in the print function. Only concatenation can be used.
+
+NOTE: This assignment is focused on the data type casting, string understanding. So Questions 1 to 5 can be put in a txt file.
