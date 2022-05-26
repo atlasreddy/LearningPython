@@ -1,0 +1,289 @@
+print("Welcome to Python classes")
+
+# print("network", "classes", "python", 2, 5, 2.5,   sep="abcsd")
+
+print("this will be executed") # this is a comment
+# this is another comment
+
+
+print("""
+this is not a comment
+fhjsdahfjksa
+# this is not a comment
+
+""")
+
+
+x = 5
+y = 8
+
+print("The sum of x and y is ", x+y)
+
+# should start with character or _
+# $x = 100
+# x$ = 20
+# 2x = 30
+x2 = 56
+_d = 89
+print(_d)
+
+string = "this is a string"
+print(string)
+
+
+price = 9.99
+discount = 0.2
+result = price * (1-discount)
+
+print(result)
+
+
+object
+	Identity
+	Value
+	Type
+
+age = "12.25"
+
+print(type(age))
+print(id(age))
+
+type_ = 56
+print(type_)
+type(age)
+
+
+a = 0b10 # 0B10
+print(a)
+
+b = 0O70
+print(b)
+
+c = 0Xa1
+print(c)
+
+
+a = 15
+print(bin(a))
+print(oct(a))
+print(hex(a))
+
+b = 0b1011
+print(hex(b))
+print(type(b))
+
+a = 0B101.10
+print(a)
+
+
+f = 1.2e3
+print(f)
+
+g = 1.23
+print(g)
+
+print(int(g))
+e = 5
+print(float(e))
+
+print(str(e))
+d = 0Xa
+print(float(d))
+print(str(d))
+
+
+
+d = 134
+e = str(d)
+print(type(e))
+
+q = "q"
+# q = "3"
+w = int(q)
+print(w)
+
+
+s1 = "network"
+s2 = "classes"
+
+print(s1 + s2)
+print(s1 * 5)
+print(s1 * s2)
+
+
+s1 = "net work"
+# Slicing operation in the string.
+
+print(s1[0])
+print(s1[3])
+
+
+input
+b = int(input("Enter second number: "))
+expression
+operator operand
+
+# Arithmetic Operators
+# +, -, *, /, %, //, **, ()
+
+
+# Relational Operators
+# >, <, >=, <=, ==, !=, [equality, not equal]
+
+print(4/3*2**3)
+expression evaluation order of precedence
+
+
+# Relational Operators
+# <, >, >=, <=, ==, !=
+
+# Logical Operators
+# and, or, not
+
+# 2> 3 and 3>5
+print(8>3 and 3>5 and 8 > 12)
+#True and True ==> True
+
+#False and False ==> False
+#False and True ==> False
+# True and False ==> False
+
+print(8 > 3 or 5 <2)
+# True or False ==> True
+# False or False ==> False
+
+
+print(8 > 3 or 5 <2 and 8 > 12) # True (and, or)
+
+print(not 10)
+# 0, ""  True
+
+print(not 0)
+print(not 8>3)
+print(bool(0))
+print(bool(""))
+print(bool(False))
+
+
+# Ternary/Conditional Operator
+# syntax: a = firstValue if condition_true else secondValue
+
+a = 2 if 2 > 1 else 1
+
+print(a)
+
+a = 2 if 2 < 1 else 1
+print(a)
+
+a = 2 if 2 < 1 else (1 if 3 < 2 else 5)
+print(a)
+
+# Small Program to find the minimum of the two values taken from the user.
+# syntax: a = firstValue if condition_true else secondValue
+
+first_value = int(input("Enter first value"))
+second_value = int(input("Enter second value"))
+
+output = first_value if first_value < second_value else second_value
+print(f"The minimum of two numbers {first_value} and {second_value} is {output}")
+
+
+# Small Program to find the minimum of the three values taken from the user.
+# syntax: a = firstValue if condition_true else secondValue
+
+first_value = int(input("Enter first value"))
+second_value = int(input("Enter second value"))
+third_value = int(input("Enter third value"))
+
+output = first_value if first_value < second_value and first_value < third_value  else (second_value if second_value < third_value else third_value)
+print(f"The minimum of three numbers {first_value}, {second_value}, {third_value} is {output}")
+
+# Small Program to find the maximum of the three values taken from the user.
+
+# syntax: a = firstValue if condition_true else secondValue
+# Write a program to find whether the input number is even/odd
+# syntax: a = firstValue if condition_true else secondValue
+
+num = int(input("Enter the number: \n"))
+rem = num % 2
+output = "even" if rem == 0 else "odd"
+print(output)
+
+
+
+# Identity Operator
+# is, is not
+
+a = 25
+b = 25
+
+print(a is b)
+
+print(id(a))
+print(id(b))
+
+c = 56
+print(id(c))
+print(c is a)
+
+print(c is not a)
+
+# ==, is
+
+
+# Membership Operators
+# in, not in
+
+d = "python"
+
+print("a" in d) # False
+print("p" in d) # True
+print("y" not in d) # False
+
+print( str(1) in str(10))
+
+
+# Conditional Statements
+# if, if - else, if - elif, if - elif - else
+
+'''
+if condition:
+    statement1
+    statement2
+elif condition2:
+    statement1
+    statement2
+elif condition3:
+    statement1
+    statement2
+else:
+    default_statement
+'''
+
+# Write a program to find whether the given number is in particular range. [0 to 100]
+
+num = int(input("Enter the number"))
+
+if num >= 0 and num <=100:
+    print("Number lies with in the given range")
+    else:
+        print("INvalid")
+else:
+    print("Enter the correct number")
+    if num >0:
+        print("Number less than 100")
+
+
+# Write a program to find whether the vowel is present in the given string.
+
+string = input("Enter the string: ")
+
+if 'a' in string or 'e' in string or 'i' in string or 'o' in string or 'u' in string:
+    print("Vowel is present ")
+else:
+    print("Vowel is not present")
+
+# Write a program to take the single digit number from the keyboard and print its value in the form of English word.
+
+0 - ZERO
+100 - Enter number with in the range
