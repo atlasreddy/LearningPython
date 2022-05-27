@@ -295,3 +295,111 @@ else:
 
 0 - ZERO
 100 - Enter number with in the range
+
+
+
+s = "abcd"
+
+d = "abcd"
+
+e = d[:]
+
+print(s is d) # True
+
+print(s is e) # True
+
+# write a program to take an input numbner from the user and increment it by 20
+
+num = int(input("Enter the number"))
+
+print(num+20)
+
+inc = num+20
+
+# num = num+20
+
+# print(num)
+
+num += 20
+# -= , *=, /=
+print(num)
+
+d = "abd"
+e = "python"
+
+d += e
+print(d)
+
+# swapping of two variables
+a,b = 1,5
+print(a)
+print(b)
+
+a,b = b,a
+print(a,b)
+
+
+a,b = "ajsh",5
+print(a)
+print(b)
+
+a,b = b,a
+print(a,b)
+
+# Evaluation of the expression
+exp = input("Enter the expression")
+
+# eval(exp)
+print(eval(exp))
+
+# To find out whether the given sides of a triangle is valid or not
+
+a = int(input("Enter the first side"))
+b = int(input("Enter the second side"))
+c = int(input("Enter the third side"))
+
+if (a+b > c) or (b+c > a) or (c+a > b):
+    print("The given sides form a valid triangle")
+else:
+    print("Invalid Triangle")
+
+# 3,4,5
+
+
+# Program to check whether a character is alphabet or not
+char = input("Enter the character")
+if len(char) == 1:
+    print(ord(char))
+    if (ord(char) >= 65 and ord(char) <= 90) or (97 <= ord(char) <= 122):
+        print("char is alphabet")
+
+    if char in "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ":
+        print("char is alphabet....")
+    # a -> 97
+    # z -> 122
+    # A -> 65
+    # Z -> 90
+# 2016
+# year == 2022:
+# 1947 <= year <= 2050:
+
+
+
+Assignment: Electricity Bill calculation.
+Input: previous reading, current reading
+Output: number of units consumed, consumer charge, consumption charge, Total Bill.
+
+[0-100]
+0-50 -- 1.95/unit. consumer = 50
+51-100 -- 3.10/unit. consummer = 80
+[101-200]
+0-100 -- 3.40/unit. consumer = 100
+101-200 -- 4.80/unit. consumer = 100
+[201, +++]
+0-200  5.10/unit.   consumer = 110
+201-300 7.70/unit.  consumer = 110
+301-400 9.00/unit.  consumer = 130
+401-800 9.50/unit.   consumer = 150
+> 800   10/unit.     consumer = 170
+total charge = units consumption charge + consumer charge
+minimum total charge is 125
