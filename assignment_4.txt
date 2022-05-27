@@ -1,0 +1,21 @@
+
+Write and execute a program for  Electricity Bill calculation using the data given below.
+Input: previous reading, current reading
+Output: number of units consumed, consumer charge, consumption charge, Total Bill.
+
+[0-100] [Including 0 and 100]
+0-50 -- 1.95/unit. consumer = 50
+51-100 -- 3.10/unit. consummer = 80
+[101-200]
+0-100 -- 3.40/unit. consumer = 100
+101-200 -- 4.80/unit. consumer = 100
+[201, +++]
+0-200  5.10/unit.   consumer = 110
+201-300 7.70/unit.  consumer = 110
+301-400 9.00/unit.  consumer = 130
+401-800 9.50/unit.   consumer = 150
+> 800   10/unit.     consumer = 170
+total charge = units consumption charge + consumer charge
+minimum total charge is 125
+
+Note: This assignment aims for the understanding the concepts of conditional flow control, arithmetic operators, variables.
