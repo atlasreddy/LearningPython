@@ -18,4 +18,80 @@ Output: number of units consumed, consumer charge, consumption charge, Total Bil
 total charge = units consumption charge + consumer charge
 minimum total charge is 125
 
+Round off the total charge to the next nearest multiple of 5.
+For example:
+160 -> 160
+161 -> 165
+166 -> 170
+169 -> 170
+
 Note: This assignment aims for the understanding the concepts of conditional flow control, arithmetic operators, variables.
+
+Test Case 1:
+Electricity bill Calculator
+Enter the previous reading: 123
+Enter the current reading: 165
+Total Units:  42
+Units Consumption Charge:  81.89999999999999
+Consumer Charge:  50
+Total Bill:  135.0
+
+Test Case 2:
+Electricity bill Calculator
+Enter the previous reading: 123
+Enter the current reading: 178
+Total Units:  55
+Units Consumption Charge:  113.0
+Consumer Charge:  80
+Total Bill:  195.0
+
+Test Case 3:
+Electricity bill Calculator
+Enter the previous reading: 123
+Enter the current reading: 256
+Total Units:  133
+Units Consumption Charge:  498.4
+Consumer Charge:  100
+Total Bill:  600.0
+
+Test Case 4:
+Electricity bill Calculator
+Enter the previous reading: 123
+Enter the current reading: 330
+Total Units:  207
+Units Consumption Charge:  1073.8999999999999
+Consumer Charge:  110
+Total Bill:  1185.0
+
+Test Case 5:
+Electricity bill Calculator
+Enter the previous reading: 123
+Enter the current reading: 440
+Total Units:  317
+Units Consumption Charge:  1943.0
+Consumer Charge:  130
+Total Bill:  2075.0
+
+Test Case 6:
+Electricity bill Calculator
+Enter the previous reading: 123
+Enter the current reading: 546
+Total Units:  423
+Units Consumption Charge:  2908.5
+Consumer Charge:  150
+Total Bill:  3060.0
+
+Test Case 7:
+Electricity bill Calculator
+Enter the previous reading: 123
+Enter the current reading: 951
+Total Units:  828
+Units Consumption Charge:  6770.0
+Consumer Charge:  170
+Total Bill:  6940.0
+
+Test Case 8:
+Electricity bill Calculator
+Enter the previous reading: 123
+Enter the current reading: 102
+Recheck the readings entered.
