@@ -403,3 +403,88 @@ Output: number of units consumed, consumer charge, consumption charge, Total Bil
 > 800   10/unit.     consumer = 170
 total charge = units consumption charge + consumer charge
 minimum total charge is 125
+
+----------------------------
+
+# list
+
+#
+
+vehicles = ["car", "bike", "bus", 10, 1.2, False]
+print(vehicles)
+
+print(type(vehicles))
+print(vehicles[0])
+print(vehicles[-1])
+
+print(type(vehicles[0]))
+
+new_vehicle = input("Enter the new vehicle: ")
+vehicles.append(new_vehicle)
+vehicles.append(new_vehicle)
+vehicles.append(456)
+vehicles.append(new_vehicle)
+
+print(vehicles)
+vehicles.insert(0, "inserted_vehicle")
+print(vehicles)
+print(vehicles[0]) # "inserted_vehicle"
+vehicles.remove(1.2)
+print(vehicles)
+
+vehicles.remove(new_vehicle)
+print(vehicles)
+
+result = vehicles.pop()
+
+print(vehicles)
+print(result)
+
+del vehicles[2]
+print(vehicles)
+
+del vehicles[2:5]
+print(vehicles)
+
+del result
+print(result)
+
+
+
+numbers = [1,5,2,6,1.3,4.5,8.6, 3.7]
+
+print(numbers)
+print(numbers[4])
+# numbers.sort(reverse=True)
+# numbers.sort() # permanently sort the list.
+# print(sorted(numbers)) # temporarily sort the list
+print(sorted(numbers, reverse=True))
+print(numbers)
+print(numbers[4])
+
+
+numbers = [1,5,2,6,1.3,4.5,8.6, 3.7]
+
+print(numbers)
+
+# numbers.reverse()
+# print(list(reversed(numbers)))
+print(numbers)
+print(len(numbers))
+
+# list(value) # type cast the values to list
+# print(numbers[10])
+
+numbers[1] = "modified"
+
+print(numbers)
+
+string1 = "hello"
+
+print(string1)
+string1[0] = "H"
+
+print(string1)
+
+
+# empty_list = [], list()
