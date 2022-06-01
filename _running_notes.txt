@@ -488,3 +488,94 @@ print(string1)
 
 
 # empty_list = [], list()
+
+####################
+vehicles = ["car", "bike", "bus", 10, 1.2, False]
+vehicle = 466
+print(vehicle)
+vehicle = 999
+print(vehicle)
+
+for vehicle in vehicles:
+    print(vehicle, end="\t")
+    # del vehicle
+print(type(vehicle), end="\b")
+print(123)
+
+'''
+for item in list_of_items:
+    print(item)
+'''
+
+
+
+
+for num in range(15):
+    print(num)
+# range(n) --> 0 to n-1
+
+for num in range(5, 20):
+    print(num)
+# range(start, stop) --> start to stop-1, step=1[default]
+print("*"*30)
+# range(start, stop, step) --> end value: stop-1
+for num in range(0, 20, 2):
+    print(num)
+print("*"*30)
+for i in range(-1, -20, -1):
+    print(i)
+
+print("*"*30)
+
+for i in range(0, 20, -1):
+    print(i)
+# start, start+step, and so on.
+'''
+for i in 456:
+   print(i)
+'''
+
+
+# generate a list of squares of natural numbers upto 25.
+
+squares = []
+for num in range(1, 26,1):
+    square = num * num
+    # square = num**2
+    squares.append(square)
+print(squares)
+
+# print the list of characters in the string.
+string1 = "python class"
+
+chars = []
+for char in string1:
+    # print(char)
+    chars.append(char)
+print(chars)
+
+#
+print(list(string1))
+
+# generate a list of squares of natural numbers upto 25.
+
+squares = []
+for num in range(1, 26,1):
+    square = num * num
+    # square = num**2
+    squares.append(square)
+print(squares)
+
+# print the list of characters in the string.
+string1 = "python class"
+
+chars = []
+for char in string1:
+    # print(char)
+    chars.append(char)
+print(chars)
+
+#
+print(list(string1))
+
+###############################
