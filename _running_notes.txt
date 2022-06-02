@@ -579,3 +579,41 @@ print(chars)
 print(list(string1))
 
 ###############################
+
+
+numbers = [0,1,2,3,4,5,6]
+
+print(sum(numbers) / len(numbers))
+print(min(numbers))
+print(max(numbers))
+
+
+numbers = [0,1,2,3,4,5,6]
+# numbers = ["python", "classes"]
+print(sum(numbers))
+print(min(numbers))
+print(max(numbers))
+
+# program to take the sequence of numbers from the user and print their sum, minimum, maximum
+
+numbers = (input("Enter the numbers: ").split(","))
+print(numbers, type(numbers))
+
+numbers_float = []
+own_sum = 0
+for number in numbers:
+    own_sum += float(number)
+    numbers_float.append(float(number))
+
+print(sum(numbers_float))
+print(own_sum)
+print(min(numbers_float))
+print(max(numbers_float))
+
+
+# input("Enter the numbers: ") # str
+#s.split(",") # list
+
+strings = ["python", "classes", "complete", 45]
+new_string = " fasdjkhfkjasd ".join(strings)
+print(new_string, type(new_string))
