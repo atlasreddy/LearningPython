@@ -1,0 +1,14 @@
+Sunny is interested in playing with numbers.
+You are supposed to take the four numbers. num1, num2, num3, num4 and are expected to find the secret PIN.
+the three numbers num1, num2, num3 are four-digit numbers within the range of 1000 to 9999 [inclusive].
+num4 is a positive integer.
+
+If num4 is even, then the interim_value is (sum of even positioned digits of num1, num2, num3) - (sum of odd positioned digits of num1, num2, num3)
+If num4 is odd, then the interim_value is -(sum of even positioned digits of num1, num2, num3) + (sum of odd positioned digits of num1, num2, num3)
+
+Note that the positions in the digits should be considered in as follows. pos4pos3pos2pos1. i.e. if number is 8569, then, 8 is at position 4, 5 is at position 3, 6 is at position 2, 9 is at position 1
+If interim_value is less than 0 then the PIN is concatenation of num1, num3, num2
+If interim_value is >= 0 then the PIN is concatenation of num1,num2,num3
+
+Example1: num4 = 38(EVEN), num1=3521, num2=2452, num3=1352 then interim_value = (3+2+2+5+1+5) - (5+1+4+2+3+2) = 1 > 0 --> PIN = 352124521352
+Example2: num4 = 37(ODD), num1=3521, num2=2452, num3=1352 then interim_value = -(3+2+2+5+1+5) + (5+1+4+2+3+2) = -1 <0 --> PIN = 352113522452
