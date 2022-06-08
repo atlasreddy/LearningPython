@@ -1,0 +1,14 @@
+1. Think of five simple foods offered in restaurant and store them in a tuple.
+    Use for loop to print each food.
+    Modify the food present at the middle position, and make sure that it throws the error. What is the error.
+    After few days, restaurant launched new menu of items, replacing the two items with the different food items. Add a line,
+    that rewrites an initially declared tuple and then use a for loop to print each of the items in the revised menu.
+
+2. Use a list comprehension to generate the list of cubes of natural numbers upto a user entered number.
+    Convert the list to tuple.
+    Use for loop to print the values, in such a way that, 5 values per line and each value is separated by the comma(,) and tab space.
+
+3. Use while loop to
+    Prompt the user to enter the positive number, until the user enters the positive number.
+    print the natural numbers in the descending order from the user entered number.
+    Test your program by giving the negative numbers, positive numbers, zero.
