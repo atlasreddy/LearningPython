@@ -710,3 +710,70 @@ print(var2, type(var2))
 print(len(var2))
 
 #############################
+
+# help(enumerate)
+#
+string = "Python class"
+
+for char in string:
+    print(char, end="\t")
+
+print()
+
+for index, char in enumerate(string):
+    print(index, char)
+
+
+list_of_values = [1,5,6,"python", 1.2, True, 89]
+for i, value in enumerate(list_of_values):
+    print(f"The value at the index {i} in the list is {value}")
+
+for val in enumerate(list_of_values):
+    print(val, type(val))
+    print(f"The value at the index {val[0]} in the list is {val[1]}")
+
+
+# input the number from the user,
+
+number = int(input("Enter the number"))
+'''
+while condition_is_true:
+    loop_body
+
+
+for x in sequence:
+    loop_body
+'''
+
+while number != 10:
+    number = int(input("Enter the number"))
+
+print("You've entered the desired number")
+
+
+# input the number from the user, print the natural numbers upto the entered number.
+
+number = int(input("Enter the number"))
+'''
+while condition_is_true:
+    loop_body
+
+
+for x in sequence:
+    loop_body
+'''
+
+x = 1
+while x <= number:
+    print(x)
+    x += 1
+print("ended the program")
+
+while x <= number:
+    print(x)
+
+while True:
+    print("Hello" )
+# Ctrl + C to interrupt the execution.
+
+#####################################
