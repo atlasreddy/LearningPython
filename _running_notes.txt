@@ -777,3 +777,58 @@ while True:
 # Ctrl + C to interrupt the execution.
 
 #####################################
+
+string1 = "python class"
+print(dir(string1))
+
+print(string1.capitalize())
+print(type(string1.capitalize()))
+
+
+# count the number of particular character
+print(string1.count('s'))
+print(string1.count('p', 4))
+print(string1.count('s', 4, 8))
+print(string1.count('S'))
+
+print(string1.endswith('class'))
+
+print("Starting with : ", string1.startswith('class'))
+print("Starting with : ", string1.startswith('py'))
+
+print(string1.find('py')) # index if it is present.
+print(string1.find('12')) # -1 if it is not present.
+
+print(string1.index('cl')) # index if it is present.
+# print(string1.index('135')) #  ValueError.
+
+
+string1 = "    pythoN class       "
+print(string1.strip())
+print(string1.rstrip())
+print(string1.lstrip())
+
+print(string1.upper())
+print(string1.lower())
+
+
+
+number = 8568
+cur_pos = 0
+total_even = 0
+total_odd = 0
+num_str = str(number)
+l = len(num_str)
+while(cur_pos < l):
+    print(cur_pos, num_str[cur_pos], number)
+    pos_value = number % 10
+    number //= 10
+    if cur_pos % 2 == 0:
+        total_odd += pos_value
+    else:
+        total_even += pos_value
+
+    cur_pos +=1
+
+print(total_even, total_odd)
+#######################
