@@ -1,5 +1,9 @@
 print("Welcome to Python classes")
 
+https://github.com/adullaharishad/Learning_Python
+https://github.com/divyathejagangam/ASSIGNMENTS
+https://github.com/Shashankdumpala/pythonlearning
+
 # print("network", "classes", "python", 2, 5, 2.5,   sep="abcsd")
 
 print("this will be executed") # this is a comment
