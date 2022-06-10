@@ -832,3 +832,80 @@ while(cur_pos < l):
 
 print(total_even, total_odd)
 #######################
+
+# Transfer statements
+# break, continue, pass
+
+list_of_numbers = [1,5,2,4,2,8,6,4]
+search = 2
+
+'''
+if search in list_of_numbers:
+    print(search, "is present in the list")
+
+'''
+
+for number in list_of_numbers:
+    if number == search:
+        print(search, "is present in the list")
+        break
+
+cart = [100,-100,56,23,47, -56]
+
+for price in cart:
+    if price < 0:
+        print("Negative price item should not be present")
+        break
+    else:
+        print("Item is processing")
+
+
+numbers = [10,20,30,0,50,45,56,78,89]
+
+for number in numbers:
+
+    if number == 0:
+        print("the division with zero is not possible")
+        print("Further processing with this number is not possible")
+        continue
+    print(100/number)
+
+
+# Transfer statements
+# break, continue, pass
+
+numbers = [10,20,30,0,50,45,56,78,89]
+
+
+for number in numbers:
+    # TODO.
+    pass
+
+
+for number in numbers:
+    # TODO.
+    print("number == 56", number == 56)
+    pass
+    print( "number == 20",number == 20)
+
+
+if 5>2:
+   # TODO print condition true;
+   pass
+
+pass
+pass
+pass
+pass
+print("End of the program")
+
+
+numbers = [10,20,30,0,50,45,56,78,89]
+
+for number in numbers:
+    # TODO.
+    print("number == 56", number == 56)
+    continue
+    print( "number == 20",number == 20)
+
+#####################################
