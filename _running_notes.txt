@@ -913,3 +913,66 @@ for number in numbers:
     print( "number == 20",number == 20)
 
 #####################################
+
+# get the unique values of the list
+list_of_numbers = [1.5,5,8,3,65,78,12,5,8,65,100,100]
+
+unique = []
+
+for num in list_of_numbers:
+    if num not in unique:
+        unique.append(num)
+print(unique)
+
+
+# get the unique values of the string
+string = "asbcasfhajkdqwuyqw"
+
+unique = []
+
+for char in string:
+    if char not in unique:
+        unique.append(char)
+print(unique, "".join(unique))
+
+# get the unique values of the list
+list_of_strings = ["a", "a", "b", "a"]
+
+unique = []
+
+for char in list_of_strings:
+    if char not in unique:
+        unique.append(char)
+print(unique, "".join(unique))
+
+
+
+# get the unique values of the list
+list_of_strings = ["a", "a", "b", "a"]
+unique = set(list_of_strings)
+print(unique)
+
+set_of_numbers = {1,5,56,74,89,74,1,56}
+print(set_of_numbers)
+
+'''
+[] list()
+() tuple()
+'''
+
+empty_set = set()
+# empty_set = {}
+print(empty_set, type(empty_set), id(empty_set))
+
+empty_set.add(45)
+empty_set.add(89)
+empty_set.add(45)
+empty_set.add(45)
+empty_set.add(78)
+print(empty_set, id(empty_set))
+
+print(45 in empty_set)
+
+print(dir(empty_set))
+
+###################
