@@ -1,0 +1,87 @@
+Question 1:
+Given a string input1 having alphabet or digits or both. Find the sum of digits or extract only the characters based on the input2. 
+
+If input2 is non zero extract the characters and make an output string. Otherwise, find sum of digits and convert it to string. 
+
+Example 1: 
+
+input1: P12y3t4h5o6n
+
+input2: 0
+
+output: 21
+
+Example 2: 
+
+input 1: P12y3t4h5o6n
+
+input2: 56
+
+output: Python
+
+Example 3: 
+
+input 1: 12345
+
+Input 2: 6
+
+Output: ZERO
+
+Example 4: 
+
+input 1: 12345
+
+Input 2: 0
+
+Output: 15
+
+Example 5: 
+
+input1: PYTHON
+
+input2: 0
+
+Output: ZERO
+
+Example 6: 
+
+input1: Python
+
+input2: 67
+
+Output: Python
+
+Example 7: 
+
+input1 : <Empty string>
+
+Input2: 0
+
+Input2:4
+
+Output: NOTHING
+
+Question 2: 
+
+Given the list of strings extract the string which has vowel at the first and last character, from the given group of strings. 
+
+These strings to be concatenated, and print the result in lower case. Otherwise, print no matches found. 
+
+Example1: 
+
+oreo,banana, apple
+
+Output: oreoapple
+
+Example 2: 
+
+banana,phone
+
+Output: no matches found
+
+Example 3: 
+
+Aerospace,bus, Engine
+
+Output: aerospaceengine. 
+
