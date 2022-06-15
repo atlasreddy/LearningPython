@@ -976,3 +976,6 @@ print(45 in empty_set)
 print(dir(empty_set))
 
 ###################
+# PRACTICE
+Write a program to validate the ip address.
+0-255.0-255.0-255.0-255
