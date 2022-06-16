@@ -979,3 +979,93 @@ print(dir(empty_set))
 # PRACTICE
 Write a program to validate the ip address.
 0-255.0-255.0-255.0-255
+
+#######################
+
+#
+
+numbers = [1,2,3,3,7,5,8,9]
+a = set(numbers)
+b = list(a)
+print(type(a), a, b)
+
+#
+
+numbers = [1,2,3,3,7,5,8,9]
+a = set(numbers)
+a.add(56)
+a.add(56)
+a.add(23)
+
+a.update([78,45,12,45])
+
+print(a)
+
+b = a.copy()
+print(id(a), id(b))
+b.add(100)
+print(a)
+print(b)
+
+a.remove(3)
+print(a)
+print(b)
+
+a.discard(5)
+print(a)
+
+a.discard(500)
+print(a)
+
+# print(a[0]) # TypeError: 'set' object does not support indexing
+
+w = a.pop()
+print(w)
+print(a)
+
+# a.remove(500)
+# print(a)
+
+a.clear()
+print(a)
+
+# 2,4,6,8,...20
+# ..30
+
+two_multiples = set(range(0,22,2))
+print(two_multiples, type(two_multiples))
+three_multiples = set(range(0,33,3))
+print(three_multiples)
+
+union_two_three = two_multiples.union(three_multiples)
+print(union_two_three)
+
+intersection_two_three = two_multiples.intersection(three_multiples)
+print(intersection_two_three)
+
+print(two_multiples.difference(three_multiples))
+
+print(three_multiples.difference(two_multiples))
+
+##########################
+PRACTICE
+
+# OTP one time password
+# Create a set of 4 digit numbers.
+# Generate 10 one time password of 4 digits.
+
+# Understand and execute the codes Code 1 and Code 2, and summarise its functionality in english words.
+
+# Code 1:
+idx_list = [idx+1 for idx,val in enumerate(test_list) if val.lstrip() == value]
+split_list = []
+i = 0
+for idx in idx_list:
+    split_list.append(test_list[i:idx])
+    i = idx
+print(split_list)
+
+
+# Code 2:
+f = [val for val in test_list if val not in values]
+print(f)
