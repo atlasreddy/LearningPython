@@ -1,0 +1,119 @@
+This assignment contains 3 Questions.
+========================================================================================================================
+Question 1:
+Program to initialise the variable with the paragraph consisting of multiple lines.
+Convert into list of words
+Give the total word count, character count.
+Remove the duplicate words
+Count how many times that word is found.
+Give the total word count, unique character count
+
+Bonus:
+Give the most occurring and least occurring character.
+
+========================================================================================================================
+Question 2:
+You've developed a paid software, which activates based on the registration key. You're supposed to write a menu-driven
+program to validate the user entered key.
+
+prompt the user to enter the key until the user enters the valid key.
+if user enters Q or q, print the good-bye message.
+
+Key format: aaaa-bbbb-cccc-dddd-1234
+Alpha numeric - Alpha numeric
+Every set is separated by the hyphen(-)
+
+Key is valid if, third character in first aaaa, occurs atleast two more times in the next sets bbbb-cccc-dddd-1234
+Eg1: qw5e-yer8-5wyc-90yh-a5sk
+Valid because third character is 5, and it has occurred two times in the next sets.
+
+Eg2: q5we-yer8-5wyc-90yh-a5sk
+Invalid because third character is w, and it has not occurred two times in the next sets.
+
+========================================================================================================================
+Question 3:
+
+Each line contains the name of the city,
+followed by the name of the day ("Sun")
+and the time in the form hh:mm.
+Read in the string and create an alphabetically ordered list of the form
+
+Chicago Sun 01:52
+Columbus Sun 02:52
+Riyadh  Sun 10:52
+Copenhagen  Sun 08:52
+Kuwait City Sun 10:52
+Rome    Sun 08:52
+Dallas  Sun 01:52
+Salt Lake City  Sun 01:52
+San Francisco Sun 00:52
+Amsterdam Sun 08:52
+Denver Sun 01:52
+San Salvador Sun 01:52
+Detroit Sun 02:52
+Las Vegas Sun 00:52
+Santiago    Sun 04:52
+Anchorage Sat 23:52
+Ankara Sun 10:52
+Lisbon  Sun 07:52
+São Paulo   Sun 05:52
+Dubai   Sun 11:52
+London  Sun 07:52
+Seattle Sun 00:52
+Dublin  Sun 07:52
+Los Angeles Sun 00:52
+Athens  Sun 09:52
+Edmonton Sun 01:52
+Madrid  Sun 08:52
+Shanghai Sun 15:52
+Atlanta Sun 02:52
+Frankfurt   Sun 08:52
+Singapore Sun 15:52
+Auckland Sun 20:52
+Halifax Sun 03:52
+Melbourne Sun 18:52
+Stockholm   Sun 08:52
+Barcelona   Sun 08:52
+Miami   Sun 02:52
+Minneapolis Sun 01:52
+Sydney Sun 18:52
+Beirut  Sun 09:52
+Helsinki    Sun 09:52
+Montreal    Sun 02:52
+Berlin  Sun 08:52
+Houston Sun 01:52
+Moscow  Sun 10:52
+Indianapolis    Sun 02:52
+Boston  Sun 02:52
+Tokyo   Sun 16:52
+Brasilia Sun 05:52
+Istanbul Sun 10:52
+Toronto Sun 02:52
+Vancouver   Sun 00:52
+Brussels    Sun 08:52
+Jerusalem   Sun 09:52
+New Orleans Sun 01:52
+Vienna  Sun 08:52
+Bucharest   Sun 09:52
+Johannesburg    Sun 09:52
+New York    Sun 02:52
+Warsaw  Sun 08:52
+Budapest    Sun 08:52
+Oslo    Sun 08:52
+Washington DC   Sun 02:52
+Ottawa  Sun 02:52
+Winnipeg    Sun 01:52
+Cairo   Sun 09:52
+Paris   Sun 08:52
+Calgary Sun 01:52
+Kathmandu   Sun 13:37
+Philadelphia    Sun 02:52
+Zurich  Sun 08:52
+Cape Town   Sun 09:52
+Phoenix Sun 00:52
+Prague  Sun 08:52
+Casablanca  Sun 07:52
+Reykjavik   Sun 07:52
+
+Expected output format:
+[('Amsterdam', 'Sun', (8, 52)), ('Anchorage', 'Sat', (23, 52)), ('Ankara', 'Sun', (10, 52)), ('Athens', 'Sun', (9, 52)), ('Atlanta', 'Sun', (2, 52)), ('Auckland', 'Sun', (20, 52)), ('Barcelona', 'Sun', (8, 52)), ('Beirut', 'Sun', (9, 52)),  ('Toronto', 'Sun', (2, 52)), ('Vancouver', 'Sun', (0, 52)), ('Vienna', 'Sun', (8, 52)), ('Warsaw', 'Sun', (8, 52)), ('Washington DC', 'Sun', (2, 52)), ('Winnipeg', 'Sun', (1, 52)), ('Zurich', 'Sun', (8, 52))]
