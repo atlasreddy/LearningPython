@@ -1069,3 +1069,81 @@ print(split_list)
 # Code 2:
 f = [val for val in test_list if val not in values]
 print(f)
+
+#####################
+# Dictionary
+
+# set()
+details = {}
+print(type(details))
+
+details['name'] = 'Shashidhar'
+details["laptop"] = 'DELL'
+details[56] = 45
+print(details)
+
+
+details_1 = {'name':'Shashi', 'laptop':'Dell'}
+# details[key_name]
+print(details_1)
+details_1['laptop'] = 'Lenovo'
+
+print(details_1)
+
+print(details_1['name'])
+print(type(details_1['name']))
+print(details_1['name'][2])
+
+# print(details_1['name_']) # KeyError: 'name_'
+print('name_' in details_1)
+if 'name_' in details_1:
+    print(details_1['name_'])
+else:
+    print('name_ is not found')
+
+details_1['name'] = ""
+print(details_1)
+
+del details_1['name']
+print(details_1)
+
+details_1.clear()
+print(details_1)
+
+# del details_1
+
+# [0]
+# values can be anything.
+# key: immutable.
+
+'''
+new_dict = {[1,2]: 'Error'} # TypeError: unhashable type: 'list'
+print(new_dict) #
+
+new_dict = {{1:'one'}:'ONE'}
+print(new_dict) # TypeError: unhashable type: 'dict'
+
+'''
+
+details_1 = {'name':'Shashi', 'laptop':'Dell'}
+
+print(details_1.keys())
+
+for key in details_1.keys():
+    print(key, details_1[key])
+
+print(details_1.values())
+
+for key,value in details_1.items():
+    print(key,value)
+
+details_2 = {'laptop':'Lenovo', 'mobile':'Android'}
+'''
+details_1.update(details_2)
+print(details_1)
+'''
+
+details_2.update(details_1)
+print(details_2)
+
+#####################
