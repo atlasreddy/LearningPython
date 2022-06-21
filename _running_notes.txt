@@ -1147,3 +1147,66 @@ details_2.update(details_1)
 print(details_2)
 
 #####################
+
+details_1 = {'name':'Shashi', 'laptop':'Dell'}
+
+print(details_1.popitem())
+# print(type(details_1.popitem()))
+
+stored_value = details_1.popitem() # ('laptop', 'Dell')
+new = dict()
+new[stored_value[0]] = stored_value[1]
+print(new)
+
+# details_1 = {}
+if len(details_1) > 0:
+    print(details_1.popitem())
+
+
+#
+details_1 = {'name':'Shashi', 'laptop':'Dell'}
+
+print(details_1['name'])
+print(details_1.get('name56'))
+
+# None
+
+print(details_1.get('name56') == None)
+
+if None:
+   # None is no value, so this block will not be executed
+   pass
+
+
+print(details_1.get('name56', "Default Value"))
+print(details_1.get('name', "Default Value"))
+
+# details_1["name"]
+
+
+print(id(print(print("Hello"))))
+a = print("hi")
+print(type(a))
+print(id(a))
+
+
+# Count the occurrences of vowels, consonant present in the given string
+
+string1 = "Shashi"
+vowels = {'a', 'e', 'i', 'o', 'u'}
+
+vowel_count = {}
+consonant_count = {}
+
+for char in string1:
+    char = char.lower()
+    if char in vowels:
+        vowel_count[char] = vowel_count.get(char, 0) + 1
+    else:
+        consonant_count[char] = consonant_count.get(char, 0) + 1
+
+print(vowel_count)
+
+print(consonant_count)
+
+#####################
