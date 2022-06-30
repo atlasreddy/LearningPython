@@ -1330,3 +1330,114 @@ else:
     print("5 > 0 is false")
 '''
 ####################
+# functions
+'''
+inbuilt functions
+print()
+sum()
+max()
+'''
+
+# for better reusability and readability.
+
+'''
+def function_name(arguments, keyword_arguments):
+    function_body
+'''
+
+print("Hello Good morning", sep='\t', end='abcd')
+
+print("Hello Good morning")
+
+print("Hello Good morning")
+
+
+def print_hi(name):
+    print("Hello " , name)
+
+print_hi("Shashi")
+print_hi("Harishad")
+
+
+
+
+def ip_address(ip_str):
+    input = ip_str.split('.')
+    if len(input)!=4:
+        print("Not a valid IP address. Please enter 4 values separated by dot")
+    else:
+        for entry in input:
+            print("I've changed the function.")
+            if entry.isdigit():
+                entry=int(entry)
+                if entry >=0 and entry <=255:
+                    continue
+                else:
+                    print(entry, "is not in a valid range. Please enter only 0-255")
+                break
+            else:
+                print(entry, "is not an interger. Please use integers only")
+
+
+ip_address("255.266.253.248")
+ip_address("285.266.253.248")
+
+print("I'm validating the ip address")
+for i in range(10):
+    print(i)
+
+ip_address("255.216.253.218")
+
+ip_address("a.b.c.d")
+# TypeError: ip_address() missing 1 required positional argument: 'ip_str'
+
+
+
+def print_hi(name="Default Value"):
+    print("Hello " , name)
+    return
+    print("This below code will not be executed")
+    return "hey good morning"
+
+
+a = print_hi("Shashi")
+print(a)
+
+'''
+print_hi("Harishad")
+print_hi()
+
+print(print_hi())
+'''
+
+
+def is_even(number):
+    if type(number) == int:
+        return number%2 == 0
+    else:
+        return False
+
+print(is_even(50))
+print(is_even(53))
+print(is_even("50"))
+
+
+if is_even(4):
+    print(4, ' is a even number')
+
+if is_even(5):
+    print(5, ' is a even number')
+
+# all the function names should follow the rules
+# which are applicable for naming the variable.
+# give function names based on what the function is actually doing.
+
+'''
+def function_name(arguments, keyword_arguments):
+    function_body
+	return object # optional
+'''
+
+# for better code reusability and readability.
+
+###########################
