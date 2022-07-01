@@ -1441,3 +1441,97 @@ def function_name(arguments, keyword_arguments):
 # for better code reusability and readability.
 
 ###########################
+def function_name(args, keyword_arguments):
+    """
+    function documentation.
+    arg1: type[any]
+
+    returns int.
+    """
+    function_body
+    return value
+
+
+# write a function which will print the square of the given number.
+
+def square_num(number):
+    """
+    This function prints the square of the given number.
+    number: int,float.
+    return None.
+    """
+    print(f"The square of {number} is {number**2}")
+    return None
+
+input_number = input("Enter the number")
+square_num(float(input_number))
+
+
+
+def sub_number_2(num1=0, num2):
+    """
+    def sub_number_2(num1=0, num2):
+                        ^
+    SyntaxError: non-default argument follows default argument
+    """
+    return num1 - num2
+print(sub_number_2(5))
+
+
+# write a function which will take two numbers as arguments
+# and return their sum.
+
+def add_numbers(num1, num2):
+    return num1 + num2
+
+# num1 = 25
+# num2 = 56
+
+# print(add_numbers(num1, num2))
+# print(add_numbers(num1)) # TypeError: add_numbers() missing 1
+# required positional argument: 'num2'
+
+
+
+num1 = 25
+num2 = 56
+
+def sub_number(num1, num2):
+    return num1 - num2
+
+print(sub_number(num1, num2))
+print(sub_number(num2, num1)) # sub_number(56, 25)
+
+
+def sub_number_1(num1, num2=0):
+    return num1 - num2
+
+print(sub_number_1(num1, num2))
+print(sub_number_1(num2, num1)) # sub_number(56, 25)
+print(sub_number_1(num1)) # sub_number_1(25, 0)
+
+
+
+def all_default_value(num1=0, num2=0):
+   print(f"The values of num1 {num1} and num2 {num2}", num1*num2)
+
+all_default_value(5, 10)
+all_default_value(5)
+all_default_value(num1= 5)
+all_default_value(num2= 5)
+# all_default_value(num1= 5, 20) #            ^
+# SyntaxError: positional argument follows keyword argument
+
+all_default_value(num2= 5, num1= 20)
+
+# positional argument
+# keyword argument
+# default argument.
+# ----------------------
+# variable length arguments.
+
+# TASK:
+# convert the electricity bill assignment into the function and
+# return the values in the dictionary format.
+
+###########################
