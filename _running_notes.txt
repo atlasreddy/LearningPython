@@ -1535,3 +1535,91 @@ all_default_value(num2= 5, num1= 20)
 # return the values in the dictionary format.
 
 ###########################
+
+
+# variable length arguments
+
+def sum_of_numbers(*numbers):
+    print(numbers)
+    print(type(numbers)) # tuple.
+    return sum(numbers)
+    
+sum1 = sum_of_numbers(11,12,45,79)
+sum2 = sum_of_numbers(11)
+sum3 = sum_of_numbers(11, 89)
+total_sum = sum_of_numbers(sum1, sum2, sum3)
+
+print("Total sum is ", total_sum)
+
+
+# variable length arguments
+
+def sum_of_numbers(*numbers):
+    print(numbers)
+    print(type(numbers)) # tuple.
+    
+    return numbers[0]
+    
+sum1 = sum_of_numbers(51,12,45,79)
+sum2 = sum_of_numbers(11)
+sum3 = sum_of_numbers(11, 89)
+total_sum = sum_of_numbers(sum1, sum2, sum3)
+
+print("Total sum is ", total_sum)
+
+
+# variable length arguments
+
+def sum_of_numbers(fixed_number, *numbers):
+    print(numbers)
+    print(type(numbers)) # tuple.
+    if len(numbers) > 0:
+        return fixed_number + numbers[0]
+    else:
+        return fixed_number
+    
+sum1 = sum_of_numbers(51,12,45,79) # 51+12 = 63
+sum2 = sum_of_numbers(11) # 11 
+sum3 = sum_of_numbers(11, 89) # 11+89 100
+total_sum = sum_of_numbers(sum1, sum2, sum3)
+
+print("Total sum is ", total_sum)
+
+# variable length arguments
+
+def sum_of_numbers(*numbers, fixed_number):
+    print(numbers)
+    print(type(numbers)) # tuple.
+    if len(numbers) > 0:
+        return fixed_number + numbers[0]
+    else:
+        return fixed_number
+    
+sum1 = sum_of_numbers(51,12,45,79, fixed_number=85) # 85+51 = 136
+sum2 = sum_of_numbers(11, fixed_number= 45) # 45+11 = 56
+sum3 = sum_of_numbers(11, 89, fixed_number=12) # 12+11 = 23
+total_sum = sum_of_numbers(sum1, sum2, fixed_number=sum3) 
+# 23+136 = 159
+
+print("Total sum is ", total_sum)
+
+
+# sum in built function. 
+# override the inbuilt function. 
+
+def sum_(*args):
+    total = 0
+    for num in args:
+        total += num
+    return total - 100
+'''
+Traceback (most recent call last):
+  File "26.py", line 10, in <module>
+    print(sum(56, 12))
+TypeError: 'int' object is not iterable
+'''
+
+print(sum((56, 12)))
+print(sum((45, 56, 12)))
+print(sum_(56, 12))
+#########################################
