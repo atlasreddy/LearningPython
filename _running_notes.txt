@@ -1820,3 +1820,6 @@ print(new.variable * 10)
 1,2
 #########################################################
 
+Create a package with atleast two modules, and import the functionality of the package in the main file using all the possible types.
+
+#########################################################
