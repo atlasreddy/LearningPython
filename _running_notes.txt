@@ -1823,3 +1823,82 @@ print(new.variable * 10)
 Create a package with atleast two modules, and import the functionality of the package in the main file using all the possible types.
 
 #########################################################
+
+
+# define a function which will perform the division of two numbers
+# assert expression_for_condition_check, Error Message
+
+'''
+def division(num1, num2):
+    if num2 != 0:
+        return num1/num2
+    else:
+        return "Division by zero is not possible"
+'''
+
+def division(num1, num2):
+    # 45 < 0 False
+    assert num1 <= 0, "Error message to be shown"
+    # assert num2 != 0, "Number 2 should not be zero"
+    return num1/num2
+
+num1 = 45
+num2 = 0
+
+result = division(num1, num2)
+print("The result is ", result)
+
+
+
+# Handle the errors in a program.
+# SyntaxError
+# RuntimeError
+# Error Handling Mechanism
+
+
+x = 5
+if x==1:
+    print("Syntax error")
+
+
+def division(num1, num2):
+    # 
+    try:
+    
+        # risky code, which may give some kind of errors 
+        return num1/num2
+        
+    except:
+        # 10/'5'
+    
+        print("There is an error with the code")
+    
+
+num1 = 45
+num2 = 0
+
+result = division(num1, num2)
+print("The result is ", result)
+
+
+num1 = 45
+num2 = 9
+
+result = division(num1, num2)
+print("The result is ", result)
+
+
+# 
+import traceback
+
+number = 0
+
+try:
+    number = int(input("Enter a number: "))
+except:
+    traceback.print_exc()
+    print("Please enter the number")
+
+print("The number is ", number)
+
+##################################################
