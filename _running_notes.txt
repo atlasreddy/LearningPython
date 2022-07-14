@@ -1902,3 +1902,89 @@ except:
 print("The number is ", number)
 
 ##################################################
+
+
+# try except,
+try:
+    print("Hello")
+
+
+
+# try except,
+try:
+    10/0
+    print("try block of code")
+except:
+    print("Except block")
+
+finally:
+    # clean up of resources
+    print("Finally block of code")
+
+
+
+# try except,
+try:
+    10/'5'# risk
+    print("")
+    print("try block of code")
+except:
+    print("Broad Exception block")
+finally:
+    # clean up of resources
+    print("Finally block of code")
+
+import traceback
+try:
+    10/0
+    print("Second try block")
+except ZeroDivisionError:
+    traceback.print_exc()
+    print("Zero Division Error Block")
+except:
+    print("second except block")
+
+
+
+try:
+    num1 = int(input("Enter the number1: "))
+    num2 = int(input("Enter the number2: "))
+    print("The result of division is ", num1/num2)
+except ZeroDivisionError:
+    print("Second number cannot be zero")
+    print("Zero Division Error Block")
+except Exception:
+# except:
+    print("except block")
+    print("Please enter only the numbers")
+
+
+try:
+    num1 = int(input("Enter the number1: "))
+    num2 = int(input("Enter the number2: "))
+except ZeroDivisionError:
+    print("Second number cannot be zero")
+    print("Zero Division Error Block")
+except Exception:
+# except:
+    print("except block")
+    print("Please enter only the numbers")
+else:
+    print("The result of Multiplication is ", num1*num2)
+finally:
+    print("The final block of  code")
+
+
+# if else
+
+##########
+#1. try,except, else, finally
+#2. try,except, else
+#3. try, except
+#4. try, except, if, else, finally
+#5. try, except, if, else
+#6. try, except, for, finally
+#7. try, except, for
+Practice on all the above combinations, and figure out which all are working.
+#############
+######################################################################
