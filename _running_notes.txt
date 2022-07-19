@@ -1988,3 +1988,116 @@ finally:
 Practice on all the above combinations, and figure out which all are working.
 #############
 ######################################################################
+
+
+# 
+import random
+
+print(random.randint(5, 50))
+
+# otp of 4 digits.
+print("The OTP is ", random.randint(1000, 9999))
+
+# 
+import random
+
+# print(random.seed())
+# random.seed = 12
+# print(random.seed)
+print(random.randint(5, 50))
+
+# otp of 4 digits.
+print("The OTP is ", random.randint(1000, 9999))
+
+# print(dir(random))
+# help(random.seed)
+
+list_of_values = ["a", "b", "c", "d", "e", 1,2,8,6,31,45,12,10]
+
+print("The random element from the list of values is ", random.choice(list_of_values))
+
+
+
+print(random.random()) # generate the values between 0 and 1
+
+
+
+import string
+
+print(tuple(string.ascii_letters))
+print(string.digits)
+print(string.punctuation)
+
+
+
+# 
+import random
+import string
+
+print(tuple(string.ascii_letters))
+print(string.digits, type(string.digits)) # "0123456789"
+print(string.punctuation)
+
+# Create some random paragraphs. 
+# paragraphs >> sentences >> words >> characters [letters+digits+punctuation]
+# 
+
+list_of_characters = list(string.ascii_letters + string.digits + string.punctuation)
+
+word = ""
+word_length = 5
+for i in range(word_length):
+    char = random.choice(list_of_characters)
+    word += char
+
+print(word)
+
+
+sentence = ""
+sentence_length = 40
+for j in range(sentence_length):
+    word = ""
+    word_length = 5
+    for i in range(word_length):
+        char = random.choice(list_of_characters)
+        word += char
+    sentence += word + " "
+
+
+
+# 
+import random
+import string
+
+print(tuple(string.ascii_letters))
+print(string.digits, type(string.digits)) # "0123456789"
+print(string.punctuation)
+
+# Create some random paragraph. 
+# paragraph >> sentences >> words >> characters [letters+digits+punctuation]
+# 
+
+list_of_characters = list(string.ascii_letters + string.digits + string.punctuation)
+
+
+
+paragraph = ""
+paragraph_length = 5
+for k in range(paragraph_length):
+    sentence = ""
+    sentence_length = 40
+    for j in range(sentence_length):
+        word = ""
+        word_length = 5
+        for i in range(word_length):
+            char = random.choice(list_of_characters)
+            word += char
+        sentence += word + " "
+
+    paragraph += sentence + " "
+
+print(paragraph)
+
+
+# Task: Want some random word length, paragraph length, sentence length
+# Do not include these symbols ` \ in the word
