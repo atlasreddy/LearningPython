@@ -2101,3 +2101,102 @@ print(paragraph)
 
 # Task: Want some random word length, paragraph length, sentence length
 # Do not include these symbols ` \ in the word
+
+
+
+#########################################
+
+# File handling
+
+# reading the content from the file
+filepath = "notes_1.txt"
+
+file = open(filepath, "r")
+
+file_content = file.read()
+
+print(file_content)
+print(type(file_content))
+
+file.close()
+
+
+
+
+# reading the content from the file
+# Writing the content to the file.
+# if the file does not exists, it will create the new file. 
+# if the file already exists, it will overwrite all the contents of that file, and then put the 
+# new content. 
+
+filepath = r"D:\Classes\Python\32\320.py"
+
+file = open(filepath, "w")
+
+file.write("This is the file demo example using write mode. ")
+
+file.close()
+
+
+
+filepath = r"D:\Classes\Python\32\320.py"
+
+file = open(filepath, "w")
+
+file.write("This is the modified content.  ")
+
+file.close()
+
+
+# File handling
+
+# reading the content from the file
+# Writing the content to the file.
+# if the file does not exists, it will create the new file. 
+# if the file already exists, it will overwrite all the contents of that file, and then put the 
+# new content. 
+
+# append. # if the file is already present, it will add the new content to the existing content. 
+# if file is not present, it will create the new file. 
+import time
+
+
+filepath = r"D:\Classes\Python\32\321.py"
+
+file = open(filepath, "a")
+
+file.write("This is the modified content.  using append mode. ")
+
+print("The file is ready. ")
+time.sleep(60)
+print("The file is not closed.")
+# file.close()
+
+# File handling
+
+# reading the content from the file
+# Writing the content to the file.
+# if the file does not exists, it will create the new file. 
+# if the file already exists, it will overwrite all the contents of that file, and then put the 
+# new content. 
+
+# append. # if the file is already present, it will add the new content to the existing content. 
+# if file is not present, it will create the new file. 
+import time
+
+
+filepath = r"D:\Classes\Python\32\321.txt"
+
+
+# Context manager.
+
+with open(filepath, "a") as file:
+    file.write("This is the modified content.  using context manager in append mode. ")
+
+    print(file.closed())
+
+
+print(file.closed())
+
+
+###########################################
