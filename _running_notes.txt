@@ -2193,10 +2193,128 @@ filepath = r"D:\Classes\Python\32\321.txt"
 with open(filepath, "a") as file:
     file.write("This is the modified content.  using context manager in append mode. ")
 
-    print(file.closed())
+    print(file.closed)
 
 
-print(file.closed())
+print(file.closed)
 
 
 ###########################################
+
+
+
+from tqdm import tqdm
+import time
+
+s = 0
+for i in tqdm(range(100)):
+    time.sleep(0.5)
+    s+=i
+
+print(s)
+
+
+
+
+
+D:\Classes\Python\34>pip install virtualenv
+WARNING: Ignoring invalid distribution -umpy (c:\users\test\anaconda3\lib\site-packages)
+WARNING: Ignoring invalid distribution -umpy (c:\users\test\anaconda3\lib\site-packages)
+Requirement already satisfied: virtualenv in c:\users\test\anaconda3\lib\site-packages (16.0.0)
+WARNING: Ignoring invalid distribution -umpy (c:\users\test\anaconda3\lib\site-packages)
+WARNING: Ignoring invalid distribution -umpy (c:\users\test\anaconda3\lib\site-packages)
+WARNING: Ignoring invalid distribution -umpy (c:\users\test\anaconda3\lib\site-packages)
+WARNING: Ignoring invalid distribution -umpy (c:\users\test\anaconda3\lib\site-packages)
+
+D:\Classes\Python\34>
+D:\Classes\Python\34>
+D:\Classes\Python\34>
+D:\Classes\Python\34>virtualenv name_env
+Using base prefix 'c:\\users\\test\\anaconda3'
+New python executable in D:\Classes\Python\34\name_env\Scripts\python.exe
+Installing setuptools, pip, wheel...done.
+
+D:\Classes\Python\34>
+D:\Classes\Python\34>.\name_env\Scripts\activate
+
+(name_env) D:\Classes\Python\34>python
+Python 3.6.13 |Anaconda, Inc.| (default, Mar 16 2021, 11:37:27) [MSC v.1916 64 bit (AMD64)] on win32
+
+Warning:
+This Python interpreter is in a conda environment, but the environment has
+not been activated. Libraries may fail to load.  To activate this environment
+please see https://conda.io/activation
+
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import sys
+>>> sys.executable
+'D:\\Classes\\Python\\34\\name_env\\Scripts\\python.exe'
+>>> ^Z
+
+
+(name_env) D:\Classes\Python\34>pip list
+Package    Version
+---------- -------
+pip        21.3.1
+setuptools 59.6.0
+wheel      0.37.1
+
+(name_env) D:\Classes\Python\34>pip install tqdm
+Collecting tqdm
+  Downloading tqdm-4.64.0-py2.py3-none-any.whl (78 kB)
+     |████████████████████████████████| 78 kB 386 kB/s
+Collecting colorama
+  Downloading colorama-0.4.5-py2.py3-none-any.whl (16 kB)
+Collecting importlib-resources
+  Downloading importlib_resources-5.4.0-py3-none-any.whl (28 kB)
+Collecting zipp>=3.1.0
+  Downloading zipp-3.6.0-py3-none-any.whl (5.3 kB)
+Installing collected packages: zipp, importlib-resources, colorama, tqdm
+Successfully installed colorama-0.4.5 importlib-resources-5.4.0 tqdm-4.64.0 zipp-3.6.0
+
+(name_env) D:\Classes\Python\34>pip show tqdm
+Name: tqdm
+Version: 4.64.0
+Summary: Fast, Extensible Progress Meter
+Home-page: https://tqdm.github.io
+Author:
+Author-email:
+License: MPLv2.0, MIT Licences
+Location: d:\classes\python\34\name_env\lib\site-packages
+Requires: colorama, importlib-resources
+Required-by:
+
+(name_env) D:\Classes\Python\34>deactivate
+D:\Classes\Python\34>.\name_env\Scripts\activate
+
+(name_env) D:\Classes\Python\34>python 34.py
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 100/100 [00:00<00:00, 99603.51it/s]
+4950
+
+(name_env) D:\Classes\Python\34>python 34.py
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 100/100 [00:51<00:00,  1.94it/s]
+4950
+
+(name_env) D:\Classes\Python\34>pip freeze >requirements.txt
+
+(name_env) D:\Classes\Python\34>pip install -r requirements.txt
+Requirement already satisfied: colorama==0.4.5 in d:\classes\python\34\name_env\lib\site-packages (from -r requirements.txt (line 1)) (0.4.5)
+Requirement already satisfied: importlib-resources==5.4.0 in d:\classes\python\34\name_env\lib\site-packages (from -r requirements.txt (line 2)) (5.4.0)
+Requirement already satisfied: tqdm==4.64.0 in d:\classes\python\34\name_env\lib\site-packages (from -r requirements.txt (line 3)) (4.64.0)
+Requirement already satisfied: zipp==3.6.0 in d:\classes\python\34\name_env\lib\site-packages (from -r requirements.txt (line 4)) (3.6.0)
+
+(name_env) D:\Classes\Python\34>pip uninstall tqdm
+Found existing installation: tqdm 4.64.0
+Uninstalling tqdm-4.64.0:
+  Would remove:
+    d:\classes\python\34\name_env\lib\site-packages\tqdm-4.64.0.dist-info\*
+    d:\classes\python\34\name_env\lib\site-packages\tqdm\*
+    d:\classes\python\34\name_env\scripts\tqdm.exe
+Proceed (Y/n)? y
+  Successfully uninstalled tqdm-4.64.0
+
+(name_env) D:\Classes\Python\34>deactivate
+D:\Classes\Python\34>
+
+#################################
+
