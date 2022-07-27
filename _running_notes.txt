@@ -2318,3 +2318,57 @@ D:\Classes\Python\34>
 
 #################################
 
+# logging
+
+import logging
+
+logging.basicConfig(filename="log_file.log", level=logging.INFO, 
+format="%(asctime)s %(message)s")
+
+
+logging.info("This is the information")
+
+logging.debug("this is the debug information")
+
+logging.error("this is the error information")
+
+
+
+#### m1.py ####
+def add(a,b):
+    return a+b
+
+print(__name__)
+
+
+if __name__=="__main__":
+    print("this is m1 file")
+    print(add(5,10))
+#### m1.py ####
+
+
+
+from m1 import add
+
+import logging
+
+logging.basicConfig(filename="log_file.log", level=logging.INFO, 
+format="%(asctime)s %(message)s")
+
+
+logging.info("This is the information")
+
+logging.debug("this is the debug information")
+
+logging.error("this is the error information")
+
+logging.info(add(200, 300))
+
+if __name__=="__main__":
+    print("Starting point of the program")
+
+
+### log_module.py ######
+
+###############################################################
+
