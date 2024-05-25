@@ -1,0 +1,5 @@
+#1 System setup and Introduction. 
+1. Why python is popular programming language ? What are the features of python and it's uses ?
+2. Download and setup the system to execute python programs. 
+3. Write a program to print Hello Welcome to Python Programming. 
+4. Write a progarm to take an input from the user console and output the same to the console. 
