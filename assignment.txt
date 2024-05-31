@@ -4,3 +4,12 @@
 3. Write a program to print Hello Welcome to Python Programming. 
 4. Write a progarm to take an input from the user console and output the same to the console. 
 #####################################
+
+#2. Variables and arithmetic operations.
+1. Write a program to find the roots of a quadratic equation. ax^2 + bx + c = 0
+2. Write and execute a program to print the statement as shown below.
+D:\test\new-system\
+3. Write a program to evaluate the equation, y = x^3 + 7 taking the inputs x from the console. Execute it for various combinations of input x, and note down your observations. 
+4. Write a progarm to convert the given number of days into years, months and days. 
+5. Calculate the area and circumference of a circle, taking the diameter of the circle as an input from the console. 
+#########################################
