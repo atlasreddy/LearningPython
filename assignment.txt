@@ -13,3 +13,15 @@ D:\test\new-system\
 4. Write a progarm to convert the given number of days into years, months and days. 
 5. Calculate the area and circumference of a circle, taking the diameter of the circle as an input from the console. 
 #########################################
+
+#3. Data types.
+1. Learn & make short notes about the help, dir functions in python and use them for the below question.  
+2. Create a each of the below data types and perform various operations that can be performed on it. 
+a. String 
+b. List 
+c. Tuple
+d. Dictionary 
+e. Set
+Various operations such as, concatenation, multiplication, index accessing, negative indexing, etc. 
+3. List out the difference between mutable and immutable data types. 
+#########################################
