@@ -25,3 +25,7 @@ e. Set
 Various operations such as, concatenation, multiplication, index accessing, negative indexing, etc. 
 3. List out the difference between mutable and immutable data types. 
 #########################################
+
+#4. Conversions
+1. Convert all the possible combinations of datatypes. 
+    Eg. list to tuple, list to set, int to float, float to int etc. 
